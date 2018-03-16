@@ -6,8 +6,13 @@ jobs:
 
     working_directory: ~/repo
 
+    branches:
+      only:
+        - enable-circleci
+
     steps:
       - checkout
+
 
       # Download and cache dependencies
       - restore_cache:
